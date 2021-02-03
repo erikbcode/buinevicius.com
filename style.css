@@ -27,7 +27,10 @@ section{
     padding: 15px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(27, 63, 163);
+    background: rgb(20, 46, 119);
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 .navbar .max-width{
     display: flex;
@@ -48,23 +51,25 @@ section{
     font-size: 18px;
     font-weight: 500;
     margin-left: 15px;
+    transition-duration: 0.3s;
 }
 .navbar .menu li a:hover{
-    color:rgb(27, 63, 163);
-}
-.navbar.sticky .menu li a:hover{
-    color: rgba(255, 255, 255, 0.774);
+    color: rgba(138, 134, 134, 0.774);
 }
 .menu-button{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
+    transition-duration: 0.25s;
+}
+.menu-button:hover {
+    color: rgba(138, 134, 134, 0.774);
 }
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/color15.png") no-repeat center;
     height: 100vh;
     min-height: 500px;
     color: #fff;
@@ -89,7 +94,7 @@ section{
 /* Contact button styling */
 .home .home-content a{
     display:inline-block;
-    background: rgb(27, 63, 163);
+    background: rgb(20, 46, 119);
     color: #fff;
     font-size: 25px;
     padding: 12px 32px;
@@ -106,15 +111,15 @@ section{
 /* About section styling */
 .about{
     font-family: "Poppins", sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
-.about .title{
-    
-    color: rgb(27, 63, 163);
+.about .title{ 
+    border: 1px solid red;
+    color: rgb(20, 46, 119);
     position: relative;
     float: left;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
@@ -157,33 +162,33 @@ section{
 .about .about-content .right a{
     text-align: justify;
     display: inline-block;
-    background:rgb(27, 63, 163);
+    background:rgb(20, 46, 119);
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(27, 63, 163);
+    border: 2px solid rgb(20, 46, 119);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color:rgb(27, 63, 163);
+    color:rgb(20, 46, 119);
     background: none;
-    border: 2px solid rgb(27, 63, 163);
+    border: 2px solid rgb(20, 46, 119);
 }
 
 /* Experience section styling */
 .experience {
     font-family: "Poppins", "sans-serif";
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .experience .title {
-    color:rgb(27, 63, 163);
+    color:rgb(20, 46, 119);
     position: relative;
     float: left;
     text-align: center;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 .experience .experience-content {
@@ -216,7 +221,7 @@ section{
 .experience .experience-content a {
     display: block;
     position: relative;
-    color: rgb(27, 63, 163);
+    color: rgb(20, 46, 119);
     top: 4px;
     float: left;
     margin-left: 5px;
@@ -248,14 +253,20 @@ section{
 /* Skills section styling */
 .skills {
     font-family: "Poppins", "sans-serif";
+    margin-bottom: 60px;
 }
 .skills .title {
-    color: rgb(27, 63, 163);
-    font-weight: 500;
+    color:rgb(20, 46, 119);
+    position: relative;
+    float: left;
+    text-align: center;
     font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
-.skills .max-width {
+.skills .skills-content {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
@@ -289,6 +300,68 @@ section{
     height: 130px;
     object-fit: fill;
 }
+
+/* Contact section styling */
+.contact {
+    font-family: "Poppins", "sans-serif";
+}
+.contact .title {
+    color: rgb(20, 46, 119);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    float: left;
+}
+.contact .contact-content form {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 4s ease-in-out;
+}
+.contact .contact-content form input {
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+    width: 80%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+.contact .contact-content form input:focus {
+    border-color: rgb(20, 46, 119);
+    outline-width: 0;
+}
+.contact .contact-content form textarea {
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+    width: 80%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+.contact .contact-content form textarea:focus {
+    border-color:rgb(20, 46, 119);
+    outline-width: 0;
+}
+.contact .contact-content form button {
+    border: none;
+    width: 200px;
+    height: 60px;
+    background: rgb(20, 46, 119);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: auto;
+}
+.contact .contact-content .submit:hover{
+    background: #fff;
+    border: 2px solid rgb(20, 46, 119);
+    color: rgb(20, 46, 119);
+}
 /* Responsive media query start (different size displays) */
 @media (max-width: 1300px){
     .home .max-width {
@@ -299,6 +372,7 @@ section{
     .about .about-content .left img{
         height: 350px;
         width: 350px;
+        object-fit: cover;
     }
 }
 @media (max-width: 991px){
@@ -311,7 +385,7 @@ section{
         display: block;
         z-index: 999;
     }
-    .menu-button span.active:before{
+    .menu-button span.active::before{
         content: "\f00d";
     }
     .navbar .menu{
@@ -327,14 +401,27 @@ section{
     }
     .navbar .menu.active{
         left: 0;
+        margin-bottom: 15px;
+        border-bottom: 2px solid white;
     }
     .navbar .menu li{
         display: block;
     }
     .navbar .menu li a{
         display: inline-block;
-        margin: 20px 0;
+        width: 30%;
+        border-bottom: 2px solid white;
+        margin: 15px 0;
         font-size: 25px;
+        padding-bottom: 30px;
+    }
+    .navbar .menu li a::after {
+        position: relative;
+        content: "";
+        height: 2px;
+        background-color: white;
+        top: 50%;
+        transform: translateX(-50%);
     }
     .home .home-content .text-2{
         font-size: 70px;
@@ -393,22 +480,38 @@ section{
         font-size: 15px;
     }
     .about .title {
-        font-size: 35px;
+        font-size: 45px;
         margin-left: auto;
         margin-right: auto;
         float: none;
     }
     .experience .title {
-        font-size: 35px;
+        font-size: 45px;
         margin-left: auto;
         margin-right: auto;
         float: none;
     }
     .experience .title {
-        font-size: 35px;
+        font-size: 45px;
         margin-left: auto;
         margin-right: auto;
         float: none;
+    }
+    .skills .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .contact .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .contact .contact-content .submit {
+        width: 150px;
+        font-size: 15px;
     }
 }
 @media (max-width: 500px){
