@@ -214,17 +214,23 @@ section{
     float: right;
 }
 .experience .experience-content .box .company{
-    position: relative;
-    float: left;
-    font-weight: 500;
-}
-.experience .experience-content a {
     display: block;
-    position: absolute;
+    position: relative;
     color: rgb(34, 66, 104);
     top: 4px;
     float: left;
-    margin-left: 5px;
+    font-weight: 500;
+}
+.experience .experience-contant .box .company:hover {
+    color: black;
+}
+.experience .experience-content a{
+    display: block;
+    position: relative;
+    color:rgb(34, 66, 104);
+    float: left;
+    top:10px;
+    margin-right:10px;
 }
 .experience .experience-content a:hover {
     color: black;
