@@ -27,7 +27,7 @@ section{
     padding: 15px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(20, 46, 119);
+    background:  rgb(57, 145, 180);
     border-bottom: 2px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -54,7 +54,7 @@ section{
     transition-duration: 0.3s;
 }
 .navbar .menu li a:hover{
-    color: rgba(138, 134, 134, 0.774);
+    color:rgb(34, 66, 104);
 }
 .menu-button{
     color: #fff;
@@ -64,12 +64,12 @@ section{
     transition-duration: 0.25s;
 }
 .menu-button:hover {
-    color: rgba(138, 134, 134, 0.774);
+    color: rgb(34, 66, 104);
 }
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/color15.png") no-repeat center;
+    background: url("images/color14.png") no-repeat center;
     height: 100vh;
     min-height: 500px;
     color: #fff;
@@ -94,7 +94,8 @@ section{
 /* Contact button styling */
 .home .home-content a{
     display:inline-block;
-    background: rgb(20, 46, 119);
+    background:  rgb(66, 45, 124);
+    opacity: 90%;
     color: #fff;
     font-size: 25px;
     padding: 12px 32px;
@@ -114,8 +115,7 @@ section{
     margin-bottom: 60px;
 }
 .about .title{ 
-    border: 1px solid red;
-    color: rgb(20, 46, 119);
+    color: rgb(34, 66, 104);;
     position: relative;
     float: left;
     font-size: 50px;
@@ -162,19 +162,19 @@ section{
 .about .about-content .right a{
     text-align: justify;
     display: inline-block;
-    background:rgb(20, 46, 119);
+    background: rgb(34, 66, 104);
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(20, 46, 119);
+    border: 2px solid  rgb(34, 66, 104);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color:rgb(20, 46, 119);
+    color: rgb(34, 66, 104);
     background: none;
-    border: 2px solid rgb(20, 46, 119);
+    border: 2px solid  rgb(34, 66, 104);
 }
 
 /* Experience section styling */
@@ -183,7 +183,7 @@ section{
     margin-bottom: 60px;
 }
 .experience .title {
-    color:rgb(20, 46, 119);
+    color: rgb(34, 66, 104);
     position: relative;
     float: left;
     text-align: center;
@@ -220,8 +220,8 @@ section{
 }
 .experience .experience-content a {
     display: block;
-    position: relative;
-    color: rgb(20, 46, 119);
+    position: absolute;
+    color: rgb(34, 66, 104);
     top: 4px;
     float: left;
     margin-left: 5px;
@@ -256,7 +256,7 @@ section{
     margin-bottom: 60px;
 }
 .skills .title {
-    color:rgb(20, 46, 119);
+    color: rgb(34, 66, 104);
     position: relative;
     float: left;
     text-align: center;
@@ -306,7 +306,7 @@ section{
     font-family: "Poppins", "sans-serif";
 }
 .contact .title {
-    color: rgb(20, 46, 119);
+    color:  rgb(34, 66, 104);
     text-align: center;
     font-size: 50px;
     font-weight: 500;
@@ -331,7 +331,7 @@ section{
     border-radius: 6px;
 }
 .contact .contact-content form input:focus {
-    border-color: rgb(20, 46, 119);
+    border-color:  rgb(34, 66, 104);
     outline-width: 0;
 }
 .contact .contact-content form textarea {
@@ -341,16 +341,17 @@ section{
     padding: 15px 10px;
     margin: 10px 0;
     border-radius: 6px;
+    border-width: 2px;
 }
 .contact .contact-content form textarea:focus {
-    border-color:rgb(20, 46, 119);
+    border-color: rgb(34, 66, 104);
     outline-width: 0;
 }
 .contact .contact-content form button {
     border: none;
     width: 200px;
     height: 60px;
-    background: rgb(20, 46, 119);
+    background:  rgb(34, 66, 104);
     border-radius: 6px;
     color: #fff;
     font-size: 20px;
@@ -359,8 +360,8 @@ section{
 }
 .contact .contact-content .submit:hover{
     background: #fff;
-    border: 2px solid rgb(20, 46, 119);
-    color: rgb(20, 46, 119);
+    border: 2px solid rgb(34, 66, 104);
+    color:  rgb(34, 66, 104);
 }
 /* Responsive media query start (different size displays) */
 @media (max-width: 1300px){
