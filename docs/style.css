@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 60px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Ubuntu', 'sans-serif';
+    transition: all 0.3s ease;
+    z-index: 998;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background:  rgb(57, 145, 180);
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition-duration: 0.3s;
+}
+.navbar .menu li a:hover{
+    color:rgb(34, 66, 104);
+}
+.menu-button{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    transition-duration: 0.25s;
+}
+.menu-button:hover {
+    color: rgb(34, 66, 104);
+}
+/* home section styling */
+.home {
+    display: flex;
+    background: url("images/color14.png") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    color: #fff;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size:40px;
+    margin: 5px 0;
+}
+/* Contact button styling */
+.home .home-content a{
+    display:inline-block;
+    background:  rgb(66, 45, 124);
+    opacity: 90%;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 32px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+/* About section styling */
+.about{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 60px;
+}
+.about .title{ 
+    color: rgb(34, 66, 104);;
+    position: relative;
+    float: left;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.about .about-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    display: inline;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.about .about-content .right p{
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+}
+.about .about-content .right p::before{
+    content: "• ";
+}
+.about .about-content .right a{
+    text-align: justify;
+    display: inline-block;
+    background: rgb(34, 66, 104);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid  rgb(34, 66, 104);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: rgb(34, 66, 104);
+    background: none;
+    border: 2px solid  rgb(34, 66, 104);
+}
+
+/* Experience section styling */
+.experience {
+    font-family: "Poppins", "sans-serif";
+    margin-bottom: 60px;
+}
+.experience .title {
+    color: rgb(34, 66, 104);
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.experience .experience-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.experience .experience-content .box {
+    border-bottom: 1px solid gray;
+    border-radius: 4px;
+    padding: 8px 5px;
+    width: 100%;
+    margin: 10px 0;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+	   -moz-box-shadow: 0 4px 6px -6px black;
+	        box-shadow: 0 4px 6px -6px black;
+}
+.experience .experience-content em{
+    float: right;
+}
+.experience .experience-content .box .company{
+    position: relative;
+    float: left;
+    font-weight: 500;
+}
+.experience .experience-content a {
+    display: block;
+    position: absolute;
+    color: rgb(34, 66, 104);
+    top: 4px;
+    float: left;
+    margin-left: 5px;
+}
+.experience .experience-content a:hover {
+    color: black;
+}
+.experience .experience-content .jobtitle {
+    position: absolute;
+    margin-top: 25px;
+    float: left;
+    font-style: italic;
+}
+.experience .experience-content .description {
+    float: left;
+    position: relative;
+    margin-top: 30px;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+.experience .experience-content .description p::before {
+    content: "• ";
+}
+.experience .experience-content .description p {
+    font-size: 15px;
+}
+
+/* Skills section styling */
+.skills {
+    font-family: "Poppins", "sans-serif";
+    margin-bottom: 60px;
+}
+.skills .title {
+    color: rgb(34, 66, 104);
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.skills .skills-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skills .skills-content .box {
+    
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+	-moz-box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 6px -6px black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.skills .skills-content .box .type {
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.skills .skills-content .box .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills .skills-content .box .images img {
+    width: 120px;
+    height: 130px;
+    object-fit: fill;
+}
+
+/* Contact section styling */
+.contact {
+    font-family: "Poppins", "sans-serif";
+}
+.contact .title {
+    color:  rgb(34, 66, 104);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    float: left;
+}
+.contact .contact-content form {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 4s ease-in-out;
+}
+.contact .contact-content form input {
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+    width: 80%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+.contact .contact-content form input:focus {
+    border-color:  rgb(34, 66, 104);
+    outline-width: 0;
+}
+.contact .contact-content form textarea {
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+    width: 80%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border-width: 2px;
+}
+.contact .contact-content form textarea:focus {
+    border-color: rgb(34, 66, 104);
+    outline-width: 0;
+}
+.contact .contact-content form button {
+    border: none;
+    width: 200px;
+    height: 60px;
+    background:  rgb(34, 66, 104);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: auto;
+}
+.contact .contact-content .submit:hover{
+    background: #fff;
+    border: 2px solid rgb(34, 66, 104);
+    color:  rgb(34, 66, 104);
+}
+/* Responsive media query start (different size displays) */
+@media (max-width: 1300px){
+    .home .max-width {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-button{
+        display: block;
+        z-index: 999;
+    }
+    .menu-button span.active::before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+        margin-bottom: 15px;
+        border-bottom: 2px solid white;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        width: 30%;
+        border-bottom: 2px solid white;
+        margin: 15px 0;
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+    .navbar .menu li a::after {
+        position: relative;
+        content: "";
+        height: 2px;
+        background-color: white;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+        padding: 9px 25px;
+    }
+    /* About section */
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        margin: 0 auto 60px;
+        justify-content: center;
+    }
+    .about .about-content .right{
+        justify-content: center;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .experience .experience-content .box .general{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .experience .experience-content .box .general em{
+        position: relative;   
+    }
+    .experience .experience-content .box .general .company {
+        margin-bottom: 0;
+        position: relative;
+    }
+    .experience .experience-content .box .general .jobtitle {
+        position: relative;
+        margin-top: 0;
+    }
+    .experience .experience-content .box a{
+        top: 0;
+        position: relative;
+    }
+}
+@media(max-width: 640px) {
+    .about .about-content .column {
+        align-items: center;
+    }
+    .about .about-content .right .text {
+        font-size: 25px;
+    }
+    .about .about-content .right p{
+        font-size: 15px;
+    }
+    .about .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .experience .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .experience .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .skills .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .contact .title {
+        font-size: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .contact .contact-content .submit {
+        width: 150px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
