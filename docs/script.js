@@ -1,11 +1,6 @@
 $(document).ready(function(){
    $(window).scroll(function(){
-        if(this.scrollY > 20) {
-            $('.navbar').addClass("sticky");
-        }
-        else{
-            $('.navbar').removeClass("sticky");
-        }
+        addScrollBar();
     })
     // toggle menu/navbar script
     $('.menu-button').click(function(){
@@ -16,4 +11,13 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active")
         $('.menu-button span').toggleClass("active")
     })
+
+    function addScrollBar() {
+        if(this.scrollY > 20) {
+            $('.navbar').addClass("sticky");
+        }
+        else{
+            $('.navbar').removeClass("sticky");
+        }
+    }
 })
