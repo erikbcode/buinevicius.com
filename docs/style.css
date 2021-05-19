@@ -69,7 +69,7 @@ section{
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/color15.png") no-repeat center;
+    background: url("images/color14.png") no-repeat center;
     height: 100vh;
     min-height: 500px;
     color: #fff;
