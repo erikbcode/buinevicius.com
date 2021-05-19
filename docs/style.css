@@ -27,7 +27,7 @@ section{
     padding: 15px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background:  rgb(22, 58, 112);
+    background:  rgba(49, 74, 189, 0.842);
     border-bottom: 2px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -64,7 +64,7 @@ section{
     transition-duration: 0.25s;
 }
 .menu-button:hover {
-    color: rgb(22, 58, 112);
+    color: rgba(49, 74, 189, 0.842);
 }
 /* home section styling */
 .home {
@@ -115,7 +115,7 @@ section{
     margin-bottom: 60px;
 }
 .about .title{ 
-    color: rgb(22, 58, 112);;
+    color: rgba(49, 74, 189, 0.842);;
     position: relative;
     float: left;
     font-size: 50px;
@@ -162,19 +162,19 @@ section{
 .about .about-content .right a{
     text-align: justify;
     display: inline-block;
-    background: rgb(22, 58, 112);
+    background: rgba(49, 74, 189, 0.842);
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid  rgb(22, 58, 112);
+    border: 2px solid  rgba(49, 74, 189, 0.842);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: rgb(22, 58, 112);
+    color: rgba(49, 74, 189, 0.842);
     background: none;
-    border: 2px solid  rgb(22, 58, 112);
+    border: 2px solid  rgba(49, 74, 189, 0.842);
 }
 
 /* Experience section styling */
@@ -183,7 +183,7 @@ section{
     margin-bottom: 60px;
 }
 .experience .title {
-    color: rgb(22, 58, 112);
+    color: rgba(49, 74, 189, 0.842);
     position: relative;
     float: left;
     text-align: center;
@@ -216,7 +216,7 @@ section{
 .experience .experience-content .box .company{
     display: block;
     position: relative;
-    color: rgb(22, 58, 112);
+    color: rgba(49, 74, 189, 0.842);
     top: 4px;
     float: left;
     font-weight: 500;
@@ -227,7 +227,7 @@ section{
 .experience .experience-content a{
     display: block;
     position: relative;
-    color:rgb(22, 58, 112);
+    color:rgba(49, 74, 189, 0.842);
     float: left;
     top:10px;
     margin-right:10px;
@@ -262,7 +262,7 @@ section{
     margin-bottom: 60px;
 }
 .skills .title {
-    color: rgb(22, 58, 112);
+    color: rgba(49, 74, 189, 0.842);
     position: relative;
     float: left;
     text-align: center;
@@ -312,7 +312,7 @@ section{
     font-family: "Poppins", "sans-serif";
 }
 .contact .title {
-    color:  rgb(22, 58, 112);
+    color:  rgba(49, 74, 189, 0.842);
     text-align: center;
     font-size: 50px;
     font-weight: 500;
@@ -337,7 +337,7 @@ section{
     border-radius: 6px;
 }
 .contact .contact-content form input:focus {
-    border-color:  rgb(22, 58, 112);
+    border-color:  rgba(49, 74, 189, 0.842);
     outline-width: 0;
 }
 .contact .contact-content form textarea {
@@ -350,14 +350,14 @@ section{
     border-width: 2px;
 }
 .contact .contact-content form textarea:focus {
-    border-color: rgb(22, 58, 112);
+    border-color: rgba(49, 74, 189, 0.842);
     outline-width: 0;
 }
 .contact .contact-content form button {
     border: none;
     width: 200px;
     height: 60px;
-    background:  rgb(22, 58, 112);
+    background:  rgba(49, 74, 189, 0.842);
     border-radius: 6px;
     color: #fff;
     font-size: 20px;
@@ -366,8 +366,8 @@ section{
 }
 .contact .contact-content .submit:hover{
     background: #fff;
-    border: 2px solid rgb(22, 58, 112);
-    color:  rgb(22, 58, 112);
+    border: 2px solid rgba(49, 74, 189, 0.842);
+    color:  rgba(49, 74, 189, 0.842);
 }
 /* Responsive media query start (different size displays) */
 @media (max-width: 1300px){
