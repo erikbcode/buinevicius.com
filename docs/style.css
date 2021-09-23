@@ -54,7 +54,7 @@ section{
     transition-duration: 0.3s;
 }
 .navbar .menu li a:hover{
-    color:rgb(32, 78, 146);
+    color:rgb(115, 160, 228);
 }
 .menu-button{
     color: #fff;
@@ -113,13 +113,14 @@ section{
 .about{
     font-family: "Poppins", sans-serif;
     margin-bottom: 60px;
+    background: rgb()
 }
 .about .title{ 
     color: rgba(49, 74, 189, 0.842);;
     position: relative;
     float: left;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
@@ -188,7 +189,7 @@ section{
     float: left;
     text-align: center;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .experience .experience-content {
@@ -267,7 +268,7 @@ section{
     float: left;
     text-align: center;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .skills .skills-content {
@@ -315,7 +316,7 @@ section{
     color:  rgba(49, 74, 189, 0.842);
     text-align: center;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     float: left;
 }
